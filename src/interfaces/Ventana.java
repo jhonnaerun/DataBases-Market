@@ -21,6 +21,10 @@ import javax.swing.JButton;
 
 public class Ventana extends JFrame implements ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textFieldArticulo;
 	private JTextField textFieldPrecio;
@@ -168,9 +172,6 @@ public class Ventana extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		String texto;
-
 		if (e.getSource() == btnCerrar) {
 			System.exit(0);
 		}

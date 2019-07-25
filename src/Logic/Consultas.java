@@ -5,8 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.mysql.cj.xdevapi.Result;
-
 import javax.swing.JOptionPane;
 
 import interfaces.Ventana;
@@ -16,7 +14,8 @@ public class Consultas {
 	private String url;
 	public Consultas(Ventana miVentana) {
 		this.miVentana = miVentana;
-		this.url = "jdbc:mysql://localhost:3307/db1?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+		this.url = "jdbc:mysql://localhost:3306/tienda?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+		//this.url = "jdbc:mysql://localhost:3306/tienda";
 		cargarDriver();
 	}
 

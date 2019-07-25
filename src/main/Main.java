@@ -2,8 +2,6 @@ package main;
 
 import java.awt.EventQueue;
 
-import javax.swing.JOptionPane;
-
 import interfaces.Ventana;
 
 public class Main {
